@@ -118,6 +118,7 @@ describe("validar as funcionalidades corretas", () => {
       .should("be.visible")
       .click({ force: true });
     cy.wait(3000);
+
     cy.get(
       ':nth-child(5) > .CarouselProductsContainer > .slick-slider > .slick-list > .slick-track > [data-index="2"] > :nth-child(1) > .ProductCardShowcase > .showcase-card-content > .menu-actions-icons > .ButtonBuyComponent > [data-cy="btn-"]'
     )
